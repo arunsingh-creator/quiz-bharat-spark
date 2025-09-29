@@ -27,13 +27,13 @@ export const HeroSection = ({ onStartQuiz, onExploreGames }: HeroSectionProps) =
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-6 py-2 mb-8">
             <Sparkles className="h-4 w-4 text-accent" />
-            <span className="text-accent font-semibold">Swadeshi for Atmanirbhar Bharat</span>
+            <span className="text-accent font-semibold">#BharatQuest</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-6 leading-tight">
-            स्वदेशी Quiz<br />
-            <span className="text-accent">Challenge</span>
+            Bharat<br />
+            <span className="text-accent">Quest</span>
           </h1>
 
           {/* Subtitle */}
