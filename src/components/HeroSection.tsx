@@ -30,11 +30,16 @@ export const HeroSection = ({ onStartQuiz, onExploreGames }: HeroSectionProps) =
             <span className="text-accent font-semibold">#BharatQuest</span>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-hero bg-clip-text text-transparent mb-6 leading-tight">
-            Bharat<br />
-            <span className="text-accent">Quest</span>
-          </h1>
+         {/* Main Heading */}
+<h1 className="font-bold mb-6 leading-tight">
+  <span className="block text-6xl md:text-8xl bg-gradient-hero bg-clip-text text-transparent">
+    Bharat
+  </span>
+  <span className="block text-3xl md:text-5xl text-accent">
+    Quest
+  </span>
+</h1>
+
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
