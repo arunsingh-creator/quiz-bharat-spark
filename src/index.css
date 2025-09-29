@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* KBC-Inspired Design System for Indian Student Innovation App
+All colors MUST be HSL for consistency and theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Text */
+    --background: 220 26% 14%;
+    --foreground: 43 96% 89%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card Components */
+    --card: 220 39% 11%;
+    --card-foreground: 43 96% 89%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover Components */
+    --popover: 220 39% 11%;
+    --popover-foreground: 43 96% 89%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* KBC Royal Blue Primary */
+    --primary: 220 91% 18%;
+    --primary-foreground: 43 96% 89%;
+    --primary-glow: 220 100% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Golden Secondary */
+    --secondary: 43 96% 56%;
+    --secondary-foreground: 220 26% 14%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Tones */
+    --muted: 220 26% 18%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Golden Accent */
+    --accent: 43 96% 56%;
+    --accent-foreground: 220 26% 14%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive (Red) */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 43 96% 89%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Success (Green) */
+    --success: 120 60% 50%;
+    --success-foreground: 43 96% 89%;
 
-    --radius: 0.5rem;
+    /* Borders & Inputs */
+    --border: 220 39% 20%;
+    --input: 220 39% 15%;
+    --ring: 43 96% 56%;
+
+    /* Design System Radius */
+    --radius: 0.75rem;
+
+    /* KBC Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 91% 18%), hsl(220 100% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(43 96% 56%), hsl(43 86% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 91% 18%) 0%, hsl(220 100% 35%) 50%, hsl(43 96% 56%) 100%);
+    
+    /* Elegant Shadows with Blue Glow */
+    --shadow-primary: 0 10px 30px -5px hsl(220 91% 18% / 0.3);
+    --shadow-glow: 0 0 40px hsl(220 100% 35% / 0.4);
+    --shadow-golden: 0 5px 20px hsl(43 96% 56% / 0.3);
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
 
