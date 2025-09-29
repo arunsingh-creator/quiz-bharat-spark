@@ -2,8 +2,9 @@ import { useState } from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { QuizGame } from "@/components/QuizGame";
 import { QuizComplete } from "@/components/QuizComplete";
+import { TraditionalGamesSection } from "@/components/TraditionalGamesSection";
 
-type AppState = 'home' | 'quiz' | 'complete';
+type AppState = 'home' | 'quiz' | 'complete' | 'games';
 
 const Index = () => {
   const [appState, setAppState] = useState<AppState>('home');
@@ -12,6 +13,10 @@ const Index = () => {
 
   const handleStartQuiz = () => {
     setAppState('quiz');
+  };
+
+  const handleExploreGames = () => {
+    setAppState('games');
   };
 
   const handleQuizComplete = (score: number, total: number) => {
@@ -31,6 +36,10 @@ const Index = () => {
     setTotalQuestions(0);
     setAppState('quiz');
   };
+
+  if (appState === 'games') {
+    return <TraditionalGamesSection onBackToHome={handleBackToHome} />;
+  }
 
   if (appState === 'quiz') {
     return (
@@ -55,7 +64,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <HeroSection onStartQuiz={handleStartQuiz} />
+      <HeroSection onStartQuiz={handleStartQuiz} onExploreGames={handleExploreGames} />
     </div>
   );
 };

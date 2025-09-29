@@ -4,9 +4,10 @@ import heroImage from "@/assets/hero-kbc-stage.jpg";
 
 interface HeroSectionProps {
   onStartQuiz: () => void;
+  onExploreGames: () => void;
 }
 
-export const HeroSection = ({ onStartQuiz }: HeroSectionProps) => {
+export const HeroSection = ({ onStartQuiz, onExploreGames }: HeroSectionProps) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -59,9 +60,10 @@ export const HeroSection = ({ onStartQuiz }: HeroSectionProps) => {
               variant="secondary"
               size="xl"
               className="w-full sm:w-auto"
+              onClick={onExploreGames}
             >
               <Gamepad2 className="mr-2 h-6 w-6" />
-              Explore Traditional Games
+              Explore Heritage Monuments
             </QuizButton>
           </div>
 
